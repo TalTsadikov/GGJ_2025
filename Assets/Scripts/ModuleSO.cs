@@ -7,4 +7,8 @@ public class ModuleSO : ScriptableObject
     public int _cellSize;
     public float _moduleWeight;
     public GameObject _modulePrefab;
+
+    //have a list of vector2int to store the location of the cells,
+    //then go one by one of the cells marked unoccupied and treat the firs cell as 0,0.
+    //then check what the  next cell is and if its unoccupied, if it is continue to the next one.
 }

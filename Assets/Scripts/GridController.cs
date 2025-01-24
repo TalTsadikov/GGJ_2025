@@ -5,6 +5,7 @@ using UnityEngine;
 public class GridController : MonoBehaviour
 {
     [SerializeField] List<GridCell> _grid;
+    [SerializeField] ModuleSO _emptyModule;
 
     private void Start()
     {
@@ -22,6 +23,11 @@ public class GridController : MonoBehaviour
                 cell.SetGridPos(pos); 
                 _grid.Add(cell);
             }
+        }
+
+        foreach (GridCell cell in _grid)
+        {
+            Instantiate(_emptyModule._modulePrefab, new Vector3(cell._gridPosition.x, cell._gridPosition.y, 0), Quaternion.identity);
         }
     }
 }
