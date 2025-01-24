@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5057263968892438986}
   - component: {fileID: 3946170659413300293}
   - component: {fileID: 8492482019543705278}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,6 +98,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3939ec0e71eb1c84a93bb56819f520ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cellSize: 0
+  _cellsLocation: []
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!61 &8492482019543705278
 BoxCollider2D:
   m_ObjectHideFlags: 0

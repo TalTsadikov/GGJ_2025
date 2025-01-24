@@ -7,6 +7,7 @@ public class ModuleObject : MonoBehaviour
 {
     [SerializeField] private int _cellSize;
     [SerializeField] private List<Vector2Int> _cellsLocation;
+    [SerializeField] private LayerMask _layerMask;
 
     [Header("Drag Variables")]
     private bool dragging = false;
@@ -15,7 +16,7 @@ public class ModuleObject : MonoBehaviour
     
     private void OnMouseEnter()
     {
-        Debug.Log("Mouse is over " + gameObject.name);
+        //Debug.Log("Mouse is over " + gameObject.name);
     }
 
     void OnMouseDown()
@@ -40,9 +41,26 @@ public class ModuleObject : MonoBehaviour
             Vector3 rayPoint = ray.GetPoint(distance);
             transform.position = rayPoint + startDist;
 
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, 100))
+            if (check())
             {
+                Debug.Log("Hit");
             }
+        }
+    }
+
+    public bool check()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, 100, _layerMask))
+        {
+            Debug.Log($"Hit {hit.collider.gameObject.name}");
+            return true;
+        }
+        else
+        { 
+            Debug.Log("No Hit");
+            return false;
+        }
     }
 }
