@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a99af3fc4783ce448c48402ae5aff54, type: 3}
   m_Name: Sabertooth Tooth
   m_EditorClassIdentifier: 
-  _moduleName: Rosemary
-  _cellSize: 2
-  _moduleWeight: 0
-  _moduleWeightChange: 0
-  damage: 1
-  CooldownRate: 0.5
+  _moduleName: Sabertooth Tooth
+  _cellSize: 3
+  _moduleWeight: 5
+  _moduleWeightChange: 1
+  damage: 4
+  CooldownRate: 3
   radius: 1
   levelupRate: 20
