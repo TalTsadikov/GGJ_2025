@@ -16,6 +16,7 @@ MonoBehaviour:
   _cellSize: 3
   _moduleWeight: 5
   _moduleWeightChange: 1
+  _modulePrefab: {fileID: 3585352357235767303, guid: 0ef20715339d7da44a8295e5b0a089ba, type: 3}
   damage: 4
   CooldownRate: 3
   radius: 1

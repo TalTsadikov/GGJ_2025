@@ -4,12 +4,26 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance;
+
     [SerializeField] List<ModuleSO> moduleList;
 
     [Header("Parameters")]
     [SerializeField] float dropWaitTime;
     [SerializeField] float dropTime;
     [SerializeField] float dropPercentage;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
 
     public void Start()
     {
@@ -24,7 +38,7 @@ public class GameManager : MonoBehaviour
         {
             totalWeight += module._moduleWeight;
         }
-        
+
         return totalWeight;
     }
 
@@ -55,8 +69,9 @@ public class GameManager : MonoBehaviour
                 }
                 chosenModule = moduleList[i];
             }
-            Debug.Log(chosenModule.name);
+
+            Vector3 pos = Random.insideUnitCircle * 5;
+            Instantiate(chosenModule._modulePrefab, transform.position + pos, Quaternion.identity);
         }
     }
-
 }
