@@ -215,9 +215,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 0.93989503, b: 0, a: 1}
 =======
+=======
+>>>>>>> Stashed changes
   m_Sprite: {fileID: 21300000, guid: a557ef3327c97e7418146ab5616e4f0a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 >>>>>>> Stashed changes
@@ -306,7 +309,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 4235637074867666038}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!1 &6470514514567541025
 GameObject:
   m_ObjectHideFlags: 0
@@ -19862,4 +19868,7 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
