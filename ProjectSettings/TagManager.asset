@@ -9,6 +9,9 @@ TagManager:
   tags:
   - Tower
   - Enemy
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   layers:
   - Default
@@ -18,8 +21,13 @@ TagManager:
   - Water
   - UI
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - 
   - 
+=======
+  - Enemy
+  - 
+>>>>>>> Stashed changes
 =======
   - Enemy
   - 
