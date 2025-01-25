@@ -5,7 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+<<<<<<< Updated upstream
   - Tower
+=======
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -13,8 +16,13 @@ TagManager:
   - Cell
   - Water
   - UI
+<<<<<<< Updated upstream
   - Enemy
   - Module
+=======
+  - Test
+  - 
+>>>>>>> Stashed changes
   - 
   - 
   - 
@@ -42,4 +50,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: VFXs
+    uniqueID: 686429661
+    locked: 0
+  - name: Background
+    uniqueID: 1042988203
+    locked: 0
+  - name: Enemies
+    uniqueID: 1865787163
     locked: 0
