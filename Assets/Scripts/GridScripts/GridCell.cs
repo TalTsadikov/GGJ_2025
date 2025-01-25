@@ -5,16 +5,20 @@ using UnityEngine;
 public class GridCell : MonoBehaviour
 {
     public Vector2Int _gridPosition { get; private set; }
-    public bool _isOccupied { get; private set;}
-    private ModuleSO _module;
+    public bool _isOccupied { get; private set; }
 
     public void SetGridPos(Vector2Int pos)
     {
         _gridPosition = pos;
     }
 
-    public void SetModule(ModuleSO module)
+    public void SetOccupied()
     {
-        _module = module;
+        _isOccupied = true;
+    }
+
+    public void SetUnoccupied()
+    {
+        _isOccupied = false;
     }
 }

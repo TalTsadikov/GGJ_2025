@@ -9,10 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c04ab1c322d741499cc3660713423b9, type: 3}
-  m_Name: Module
+  m_Script: {fileID: 11500000, guid: 7a99af3fc4783ce448c48402ae5aff54, type: 3}
+  m_Name: Rosemary
   m_EditorClassIdentifier: 
   _moduleName: Rosemary
-  _cellSize: 0
-  _moduleWeight: 15
+  _cellSize: 2
+  _moduleWeight: 0
   _moduleWeightChange: 0
+  damage: 1
+  CooldownRate: 0.5
+  radius: 1
+  levelupRate: 20

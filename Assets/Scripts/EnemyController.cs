@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    public GameObject GameObject;
-    [SerializeField] float _radius = 15f;
+    [SerializeField] GameObject _enemy;
+    [SerializeField] float _radius = 5f;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        Vector3 pos = Random.insideUnitCircle.normalized * _radius;
-        Instantiate(GameObject, pos, Quaternion.identity);
+        InvokeRepeating("SpawnEnemy", 0, 1f);
     }
 
-    
+    private void SpawnEnemy()
+    {
+        Vector3 pos = Random.insideUnitCircle.normalized * _radius;
+        Instantiate(_enemy, transform.position + pos, Quaternion.identity);
+    }
 }
